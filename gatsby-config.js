@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Gatsby Travel Website",
+    description: "Travel website",
+    author: "Mandar Waghe",
+  },
+  plugins: [`gatsby-plugin-styled-components`],
 }
