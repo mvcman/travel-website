@@ -20,7 +20,9 @@ const Hero = () => {
         <HeroItems>
           <HeroH1>Unreal Destination</HeroH1>
           <HeroP>Out of this world</HeroP>
-          <Button>Travel Now</Button>
+          <Button primary="true" big="true" round="true" to="trips">
+            Travel Now
+          </Button>
         </HeroItems>
       </HeroContent>
     </HeroContainer>
@@ -39,6 +41,22 @@ const HeroContainer = styled.div`
   padding: 1rem;
   position: relative;
   margin-top: -80px;
+
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.2) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      ),
+      linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+  }
 `
 const HeroBg = styled.div`
   position: absolute;
@@ -78,6 +96,7 @@ const HeroH1 = styled.h1`
 const HeroP = styled.p`
   font-size: clamp(1rem, 3vw, 3rem);
   margin-bottom: 2rem;
+  font-weight: 400;
 `
 
 const VideoBg = styled.video`

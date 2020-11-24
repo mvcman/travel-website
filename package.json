@@ -15,7 +15,10 @@
   },
   "dependencies": {
     "gatsby": "^2.26.1",
+    "gatsby-image": "^2.6.0",
     "gatsby-plugin-styled-components": "^3.5.0",
+    "gatsby-source-filesystem": "^2.6.1",
+    "gatsby-transformer-json": "^2.6.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-icons": "^3.11.0",
